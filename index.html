@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+
+  <title>Documentation - CafeTime</title>
+
+  <meta name='author' content='CafeTime Dev.'>
+  <meta name='keywords' content='Premium account service, buy premium apps, trusted premium service'>
+
+  <meta name='description' content='Best Premium App Purchase Service.' />
+  <meta name='robots' content='index, follow'/>
+
+  <meta property='og:title' content='Documentation - CafeTime'/>
+  <meta property='og:description' content='Best Premium App Purchase Service.'>
+  <meta property='og:image' content='http://cdn.cafetime.my.id/og-title.jpg'/>
+  <meta property='og:url' content='https://cafetime.my.id/'/>
+  <meta property='og:type' content='website'/>
+  <meta property='og:site_name' content='CafeTime'>
+
+  <meta name='twitter:title' content='Documentation - CafeTime'>
+  <meta name='twitter:description' content='Best Premium App Purchase Service.'>
+  <meta name='twitter:image' content='http://cdn.cafetime.my.id/og-title.jpg'>
+  <meta name='twitter:card' content='summary_large_image'>
+  <meta name='twitter:url' content='https://cafetime.my.id/'>
+  <meta name='twitter:creator' content='@sorawangyy'>
+
+  <link rel='icon' type='image/png' href='http://cdn.cafetime.my.id/fav-icon.png?v=1'/>
+
+  <link rel='canonical' href='https://cafetime.my.id/'/>
+  <link rel='stylesheet' href='./assets/css-index.css'/>
+
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+
+  <link href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap' rel='stylesheet'>
+</head>
+<body>
+  <main class='hero'>
+    <div class='hero-inner'>
+      <h1 class='hero-title'>
+        Mulailah akun Anda menjadi
+        <span>Premium.</span>
+      </h1>
+
+      <p class='hero-desc'>
+        Akses semua fitur pro pada aplikasi anda. Harga terjangkau dan dijamin aman dan terpercaya.
+      </p>
+
+      <div class='hero-actions'>
+        <button class='btn-primary' id='openStock'>Lihat Stok</button>
+        <a href='https://whatsapp.com/channel/0029Vb72xiMF1YlaU5C2NR2J' class='btn-secondary' target='_blank' rel='noopener noreferrer'>Testimoni</a>
+      </div>
+
+      <div class='feature-grid'>
+        <div class='feature-card'>
+          <img
+            src='https://play-lh.googleusercontent.com/OU0BlP8C9-V7ECl2crma7B48nzDbK7liSLjn0j_fpTlyWG6qyEE-mw_KFZ9aOXF0a3w=w480-h960-rw'
+            class='feature-icon'
+          >
+          <h3>Alight Motion</h3>
+          <p>
+            Aplikasi editing video motion graphic untuk membuat animasi, dan editing video dari mobile.
+          </p>
+          <button class='btn-buy' data-app='alight'>Beli</button>
+        </div>
+
+        <div class='feature-card'>
+          <img
+            src='https://play-lh.googleusercontent.com/qnhlawp4zltUoW8tmb0SYT2rNC7vsuVckNB4I9FnAOplX4mOCfzG5W_FJv-BSDsSnOqE=w480-h960-rw'
+            class='feature-icon'
+          >
+          <h3>CapCut</h3>
+          <p>
+            Aplikasi editing video dengan fitur lengkap dan template instan untuk konten kreatif.
+          </p>
+          <button class='btn-buy' data-app='capcut'>Beli</button>
+        </div>
+      </div>
+
+      <footer class='site-footer'>
+        <p>2025 © CafeTime. All rights reserved.</p>
+      </footer>
+    </div>
+  </main>
+
+  <div class='modal' id='buyModal'>
+    <div class='modal-content'>
+      <h3 id='modalTitle'>Konfirmasi Pembelian</h3>
+      <p id='modalDesc'></p>
+
+      <div class='option-group' id='accountOptions'>
+        <label class='option-card'>
+          <input type='radio' name='accountType' value='option1' checked>
+          <div class='option-text'>
+            <span id='option1Title'></span>
+            <small id='option1Desc'></small>
+          </div>
+        </label>
+
+        <label class='option-card'>
+          <input type='radio' name='accountType' value='option2'>
+          <div class='option-text'>
+            <span id='option2Title'></span>
+            <small id='option2Desc'></small>
+          </div>
+        </label>
+      </div>
+
+      <div class='modal-actions'>
+        <button class='btn-secondary' id='closeModal'>Batal</button>
+        <button class='btn-primary' id='confirmBuy'>Lanjutkan</button>
+      </div>
+    </div>
+  </div>
+
+  <button class='btn-primary' id='openStock'>Lihat Stok</button>
+
+  <div class='modal' id='stockModal'>
+    <div class='modal-content'>
+        <h3>Lihat Stok Saat yang Tersedia</h3>
+        <p>Daftar aplikasi yang ready stok saat ini :</p>
+
+        <ul class='stock-list'>
+        <li>✅ Alight Motion</li>
+        <li>✅ CapCut</li>
+        </ul>
+
+        <div class='modal-actions'>
+        <button class='btn-secondary' id='closeStock'>Tutup</button>
+        </div>
+    </div>
+  </div>
+
+  <script src='./assets/js-index.js'></script>
+</body>
+</html>
